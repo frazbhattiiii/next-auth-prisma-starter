@@ -1,5 +1,3 @@
-import { env } from '@/env.mjs';
-
 export const siteConfig = {
   title: 'Next.js Starter',
   description:
@@ -16,6 +14,7 @@ export const siteConfig = {
     'Next-auth',
     'Prisma',
   ],
-  url: env.NEXT_PUBLIC_SITE_URL || 'https://example.com',
-  googleSiteVerificationId: env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION_ID || '',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com',
+  googleSiteVerificationId:
+    process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION_ID || '',
 };
